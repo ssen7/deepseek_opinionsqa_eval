@@ -1,0 +1,89 @@
+	Unnamed: 0	question	md	subgroup	options
+0	0	"Below you will be asked to provide a short description of your political affiliation and then answer some questions.
+
+Description: In politics today, I consider myself a Democrat.
+"	POLPARTY	Democrat	['Republican', 'Democrat', 'Independent', 'Other', 'Refused']
+1	1	"Below you will be asked to provide a short description of your political affiliation and then answer some questions.
+
+Description: In politics today, I consider myself a Republican.
+"	POLPARTY	Republican	['Republican', 'Democrat', 'Independent', 'Other', 'Refused']
+2	2	"Below you will be asked to provide a short description of your political ideology and then answer some questions.
+
+Description: I would describe my political views as Conservative.
+"	POLIDEOLOGY	Conservative	['Very conservative', 'Conservative', 'Moderate', 'Liberal', 'Very liberal', 'Refused']
+3	3	"Below you will be asked to provide a short description of your political ideology and then answer some questions.
+
+Description: I would describe my political views as Liberal.
+"	POLIDEOLOGY	Liberal	['Very conservative', 'Conservative', 'Moderate', 'Liberal', 'Very liberal', 'Refused']
+4	4	"Below you will be asked to provide a short description of your political ideology and then answer some questions.
+
+Description: I would describe my political views as Moderate.
+"	POLIDEOLOGY	Moderate	['Very conservative', 'Conservative', 'Moderate', 'Liberal', 'Very liberal', 'Refused']
+5	5	"Below you will be asked to provide a short description of your religious preferences and then answer some questions.
+
+Description: My present religion is Protestant.
+"	RELIG	Protestant	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+6	6	"Below you will be asked to provide a short description of your religious preferences and then answer some questions.
+
+Description: My present religion is Atheist.
+"	RELIG	Atheist	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+7	7	"Below you will be asked to provide a short description of your religious preferences and then answer some questions.
+
+Description: My present religion is Muslim.
+"	RELIG	Muslim	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+8	8	"Below you will be asked to provide a short description of your religious preferences and then answer some questions.
+
+Description: My present religion is Hindu.
+"	RELIG	Hindu	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+9	9	"Below you will be asked to provide a short description of your religious preferences and then answer some questions.
+
+Description: My present religion is Jewish.
+"	RELIG	Jewish	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+10	10	"Below you will be asked to provide a short description of your race or ethnicity and then answer some questions.
+
+Description: I am White.
+"	RACE	White	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']
+11	11	"Below you will be asked to provide a short description of your race or ethnicity and then answer some questions.
+
+Description: I am Black.
+"	RACE	Black	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']
+12	12	"Below you will be asked to provide a short description of your race or ethnicity and then answer some questions.
+
+Description: I am Asian.
+"	RACE	Asian	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']
+13	13	"Below you will be asked to provide a short description of your race or ethnicity and then answer some questions.
+
+Description: I am Hispanic.
+"	RACE	Hispanic	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']
+14	14	"Below you will be asked to provide a short description of your current education level and then answer some questions.
+
+Description: The highest level of education I have completed is less than high school.
+"	EDUCATION	Less than high school	"['Less than high school', 'High school graduate', 'Some college, no degree', ""Associate's degree"", 'College graduate/some postgrad', 'Postgraduate', 'Refused']"
+15	15	"Below you will be asked to provide a short description of your current education level and then answer some questions.
+
+Description: The highest level of education I have completed is college or some post graduate.
+"	EDUCATION	College graduate/some postgrad	"['Less than high school', 'High school graduate', 'Some college, no degree', ""Associate's degree"", 'College graduate/some postgrad', 'Postgraduate', 'Refused']"
+16	16	"Below you will be asked to provide a short description of your current family income and then answer some questions.
+
+Description: Last year, my total family income from all sources, before taxes was less than $30,000.
+"	INCOME	Less than $30,000	['Less than $30,000', '$30,000-$50,000', '$50,000-$75,000', '$75,000-$100,000', '$100,000 or more', 'Refused']
+17	17	"Below you will be asked to provide a short description of your current family income and then answer some questions.
+
+Description: Last year, my total family income from all sources, before taxes was $100,000 or more.
+"	INCOME	$100,000 or more	['Less than $30,000', '$30,000-$50,000', '$50,000-$75,000', '$75,000-$100,000', '$100,000 or more', 'Refused']
+18	18	"Below you will be asked to provide a short description of the region you currently reside in within the US and then answer some questions.
+
+Description: I currently reside in the Northeast.
+"	CREGION	Northeast	['Northeast', 'Midwest', 'South', 'West', 'Refused']
+19	19	"Below you will be asked to provide a short description of the region you currently reside in within the US and then answer some questions.
+
+Description: I currently reside in the South.
+"	CREGION	South	['Northeast', 'Midwest', 'South', 'West', 'Refused']
+20	20	"Below you will be asked to provide a short description of the sex you were assigned at birth and then answer some questions.
+
+Description: I identify as a man.
+"	SEX	Male	['Male', 'Female', 'Refused']
+21	21	"Below you will be asked to provide a short description of the sex you were assigned at birth and then answer some questions.
+
+Description: I identify as a woman.
+"	SEX	Female	['Male', 'Female', 'Refused']

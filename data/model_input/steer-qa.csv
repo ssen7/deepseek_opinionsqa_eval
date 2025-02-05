@@ -1,0 +1,23 @@
+	Unnamed: 0	question	options	correct	md	subgroup
+0	0	What is your present religion, if any?	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']	Protestant	RELIG	Protestant
+1	1	What is your present religion, if any?	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']	Atheist	RELIG	Atheist
+2	2	What is your present religion, if any?	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']	Muslim	RELIG	Muslim
+3	3	What is your present religion, if any?	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']	Hindu	RELIG	Hindu
+4	4	What is your present religion, if any?	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']	Jewish	RELIG	Jewish
+5	5	In politics today, do you consider yourself a	['Republican', 'Democrat', 'Independent', 'Other', 'Refused']	Democrat	POLPARTY	Democrat
+6	6	In politics today, do you consider yourself a	['Republican', 'Democrat', 'Independent', 'Other', 'Refused']	Republican	POLPARTY	Republican
+7	7	What is the highest level of schooling or degree that you have completed?	"['Less than high school', 'High school graduate', 'Some college, no degree', ""Associate's degree"", 'College graduate/some postgrad', 'Postgraduate', 'Refused']"	Less than high school	EDUCATION	Less than high school
+8	8	What is the highest level of schooling or degree that you have completed?	"['Less than high school', 'High school graduate', 'Some college, no degree', ""Associate's degree"", 'College graduate/some postgrad', 'Postgraduate', 'Refused']"	College graduate/some postgrad	EDUCATION	College graduate/some postgrad
+9	9	Which part of the United States do you currently live in?	['Northeast', 'Midwest', 'South', 'West', 'Refused']	Northeast	CREGION	Northeast
+10	10	Which part of the United States do you currently live in?	['Northeast', 'Midwest', 'South', 'West', 'Refused']	South	CREGION	South
+11	11	In general, would you describe your political views as	['Very conservative', 'Conservative', 'Moderate', 'Liberal', 'Very liberal', 'Refused']	Conservative	POLIDEOLOGY	Conservative
+12	12	In general, would you describe your political views as	['Very conservative', 'Conservative', 'Moderate', 'Liberal', 'Very liberal', 'Refused']	Liberal	POLIDEOLOGY	Liberal
+13	13	In general, would you describe your political views as	['Very conservative', 'Conservative', 'Moderate', 'Liberal', 'Very liberal', 'Refused']	Moderate	POLIDEOLOGY	Moderate
+14	14	What is your race or ethnicity?	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']	White	RACE	White
+15	15	What is your race or ethnicity?	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']	Black	RACE	Black
+16	16	What is your race or ethnicity?	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']	Asian	RACE	Asian
+17	17	What is your race or ethnicity?	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']	Hispanic	RACE	Hispanic
+18	18	Last year, what was your total family income from all sources, before taxes?	['Less than $30,000', '$30,000-$50,000', '$50,000-$75,000', '$75,000-$100,000', '$100,000 or more', 'Refused']	Less than $30,000	INCOME	Less than $30,000
+19	19	Last year, what was your total family income from all sources, before taxes?	['Less than $30,000', '$30,000-$50,000', '$50,000-$75,000', '$75,000-$100,000', '$100,000 or more', 'Refused']	$100,000 or more	INCOME	$100,000 or more
+20	20	What sex were you assigned at birth?	['Male', 'Female', 'Refused']	Male	SEX	Male
+21	21	What sex were you assigned at birth?	['Male', 'Female', 'Refused']	Female	SEX	Female

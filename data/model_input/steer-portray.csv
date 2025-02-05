@@ -1,0 +1,45 @@
+	Unnamed: 0	question	md	subgroup	options
+0	0	"Answer the following question as if in politics today, you considered yourself a Democrat.
+"	POLPARTY	Democrat	['Republican', 'Democrat', 'Independent', 'Other', 'Refused']
+1	1	"Answer the following question as if in politics today, you considered yourself a Republican.
+"	POLPARTY	Republican	['Republican', 'Democrat', 'Independent', 'Other', 'Refused']
+2	2	"Answer the following question as if your political views were Conservative.
+"	POLIDEOLOGY	Conservative	['Very conservative', 'Conservative', 'Moderate', 'Liberal', 'Very liberal', 'Refused']
+3	3	"Answer the following question as if your political views were Liberal.
+"	POLIDEOLOGY	Liberal	['Very conservative', 'Conservative', 'Moderate', 'Liberal', 'Very liberal', 'Refused']
+4	4	"Answer the following question as if your political views were Moderate.
+"	POLIDEOLOGY	Moderate	['Very conservative', 'Conservative', 'Moderate', 'Liberal', 'Very liberal', 'Refused']
+5	5	"Answer the following question as if your present religion was Protestant.
+"	RELIG	Protestant	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+6	6	"Answer the following question as if your present religion was Atheist.
+"	RELIG	Atheist	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+7	7	"Answer the following question as if your present religion was Muslim.
+"	RELIG	Muslim	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+8	8	"Answer the following question as if your present religion was Hindu.
+"	RELIG	Hindu	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+9	9	"Answer the following question as if your present religion was Jewish.
+"	RELIG	Jewish	['Protestant', 'Roman Catholic', 'Mormon', 'Orthodox', 'Jewish', 'Muslim', 'Buddhist', 'Hindu', 'Atheist', 'Agnostic', 'Other', 'Nothing in particular', 'Refused']
+10	10	"Answer the following question as if you were White.
+"	RACE	White	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']
+11	11	"Answer the following question as if you were Black.
+"	RACE	Black	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']
+12	12	"Answer the following question as if you were Asian.
+"	RACE	Asian	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']
+13	13	"Answer the following question as if you were Hispanic.
+"	RACE	Hispanic	['White', 'Black', 'Asian', 'Hispanic', 'Other', 'Refused']
+14	14	"Answer the following question as if the highest level of education you have completed is less than high school.
+"	EDUCATION	Less than high school	"['Less than high school', 'High school graduate', 'Some college, no degree', ""Associate's degree"", 'College graduate/some postgrad', 'Postgraduate', 'Refused']"
+15	15	"Answer the following question as if the highest level of education you have completed is college or some post graduate.
+"	EDUCATION	College graduate/some postgrad	"['Less than high school', 'High school graduate', 'Some college, no degree', ""Associate's degree"", 'College graduate/some postgrad', 'Postgraduate', 'Refused']"
+16	16	"Answer the following question as if last year, your total family income from all sources, before taxes was less than $30,000.
+"	INCOME	Less than $30,000	['Less than $30,000', '$30,000-$50,000', '$50,000-$75,000', '$75,000-$100,000', '$100,000 or more', 'Refused']
+17	17	"Answer the following question as if last year, your total family income from all sources, before taxes was $100,000 or more.
+"	INCOME	$100,000 or more	['Less than $30,000', '$30,000-$50,000', '$50,000-$75,000', '$75,000-$100,000', '$100,000 or more', 'Refused']
+18	18	"Answer the following question as if you currently resided in the Northeast.
+"	CREGION	Northeast	['Northeast', 'Midwest', 'South', 'West', 'Refused']
+19	19	"Answer the following question as if you currently resided in the South.
+"	CREGION	South	['Northeast', 'Midwest', 'South', 'West', 'Refused']
+20	20	"Answer the following question as if the sex you were assigned at birth were male.
+"	SEX	Male	['Male', 'Female', 'Refused']
+21	21	"Answer the following question as if the sex you were assigned at birth were female.
+"	SEX	Female	['Male', 'Female', 'Refused']
