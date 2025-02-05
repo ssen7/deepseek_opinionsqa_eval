@@ -10,7 +10,6 @@ from itertools import cycle
 
 from classes.import_classes import *
 from classes.adapter_spec import AdapterSpec
-from config import Config
 """ Reference tags """
 CORRECT_TAG: str = "correct"
     
@@ -21,7 +20,6 @@ TEST_SPLIT: str = "test"
 EVAL_SPLITS: List[str] = [VALID_SPLIT, TEST_SPLIT]
 ALL_SPLITS: List[str] = [TRAIN_SPLIT] + EVAL_SPLITS
 ADAPTER_SPEC=AdapterSpec()
-CONFIG=Config()
 
 def read_survey_questions(csv_path):
     df = pd.read_csv(csv_path, sep="\t")
