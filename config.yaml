@@ -1,0 +1,9 @@
+prompt:
+  output_path: ./
+  context: steer-bio
+  # context: default
+  # context: steer-portray
+  survey_type: Pew_American_Trends_Panel_disagreement_500
+  # survey_type: Pew_American_Trends_Panel_W26
+  include_output: False
+  reference_index: null
