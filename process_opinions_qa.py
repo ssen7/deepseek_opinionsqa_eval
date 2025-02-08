@@ -10,6 +10,7 @@ from itertools import cycle
 
 from classes.import_classes import *
 from classes.adapter_spec import AdapterSpec
+
 """ Reference tags """
 CORRECT_TAG: str = "correct"
     
@@ -216,11 +217,37 @@ def generate_prompt(config):
     include_output=config['prompt']['include_output']
     reference_index=config['prompt']['reference_index']
     
+    res_dict=dict()
+    res_dict['train']={'references':[],'mapping':[], 'question':[],'question_raw':[]}
+    res_dict['eval']={'references':[],'mapping':[], 'question':[],'question_raw':[]}
+    
     instances=return_prompt_instances(config)
     all_train_instances: List[Instance] = [instance for instance in instances if instance.split == TRAIN_SPLIT]
-
     # Pick out evaluation instances. This includes both valid and test splits.
     eval_instances: List[Instance] = [instance for instance in instances if instance.split in EVAL_SPLITS]
+    
+    if (len(all_train_instances)>0) & (len(all_train_instances)<len(eval_instances)):
+        all_train_instances=increase_list_size_randomly(all_train_instances, increase_by=(len(eval_instances)-len(all_train_instances)))
+        
+    if config['n_trials']>1:
+        if (len(all_train_instances)>0):
+            all_train_instances=increase_list_size_randomly(all_train_instances, increase_by=(config['n_trials']-1)*len(all_train_instances))
+        eval_instances=increase_list_size_randomly(eval_instances, increase_by=(config['n_trials']-1)*len(eval_instances))
+        
+    
+    for ins in all_train_instances:
+        refs,ref_map_dict,question,question_raw = get_question_details(ins)
+        res_dict['train']['references']+=[refs]
+        res_dict['train']['mapping']+=[ref_map_dict]
+        res_dict['train']['question']+=[question]
+        res_dict['train']['question_raw']+=[question_raw]
+    
+    for ins in eval_instances:
+        refs,ref_map_dict,question,question_raw = get_question_details(ins)
+        res_dict['eval']['references']+=[refs]
+        res_dict['eval']['mapping']+=[ref_map_dict]
+        res_dict['eval']['question']+=[question]
+        res_dict['eval']['question_raw']+=[question_raw]
 
     # print(
     #     f"{len(instances)} instances, "
@@ -233,10 +260,44 @@ def generate_prompt(config):
     ]
 
     # Example text
-    eval_instance_block: str = [
+    eval_instance_blocks: str = [
         construct_example_prompt(inst, include_output=include_output, reference_index=reference_index) for inst in eval_instances
     ]
-    return train_instance_blocks, eval_instance_block
+    
+    
+    return train_instance_blocks, eval_instance_blocks, res_dict
+
+def get_question_details(instance):
+    refs=list()
+    ref_map_dict=dict()
+    question=str()
+    question_raw=str()
+    
+    for reference_index, reference in enumerate(instance.references):
+        prefix = get_reference_prefix(ADAPTER_SPEC.reference_prefix, reference_index)
+        refs+=[reference.output.text]
+        ref_map_dict[prefix[0]]=reference.output.text
+    question=ADAPTER_SPEC.input_prefix + instance.input.text + ADAPTER_SPEC.input_suffix
+    
+    question_raw=construct_example_prompt(instance, include_output=False, reference_index=None)
+        
+    return refs, ref_map_dict,question,question_raw
+
+def increase_list_size_randomly(my_list, increase_by):
+    """Increases the size of a list by appending randomly chosen members.
+
+    Args:
+        my_list: The list to modify.
+        increase_by: The number of elements to add to the list.
+    """
+    if not my_list:
+        raise ValueError("The list cannot be empty.")
+    
+    for _ in range(increase_by):
+        random_element = random.choice(my_list)
+        my_list.append(random_element)
+    
+    return my_list
 
 if __name__=='__main__':
     print(generate_prompt())
